@@ -12,34 +12,34 @@
    
       *ASSUME A TABLE:-
 
-     create table engineer(id int primary key,name varchar(50),age int);
-
+     create table employees(employe_id int,name varchar(50) not null,email char(20) unique,age int);
+     
       Example of CRUD operations:-
 
     ---CREATE
       
-          insert into engineer values(1, 'vamshi', 22);
+          insert into employees values(1, 'vamshi','vamcs768@gmail.com,22);
 
     ---READ
 
-          select * from engineer;
+          select * from employees;
 
     ---UPDATE
 
-          update engineer set age=21 where id=1;
+          update employees set age=21 where id=1;
 
     ---DELETE
 
-          delete from engineer where id=1;  
+          delete from employees where id=1;  
 
   ANOTHER Record
 
 create database 103r;
-use student;
-create table student(id_int,name varchar(20) not null,email char(20) unique,age int);
-insert into student values(1,"vamshi","vamcs768@gmail.com",22);
-select*from student;
-update student set age=21 where student id=1;
-delete from student where id=1;
-select*from student;
+use departments;
+create table departments(department_id int,name varchar(20) not null,email char(20) unique,age int);
+insert into department values(1,"vamshi","vamcs768@gmail.com",22);
+select*from department;
+update department set age=21 where department_id=1;
+delete from department where department_id=1;
+select*from department;
   
